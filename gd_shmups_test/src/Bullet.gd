@@ -90,9 +90,6 @@ func _physics_process(delta: float) -> void:
 	queue_redraw()
 
 func _check_buzz() -> bool:
-	if Common.is_buzz == false:
-		return false
-	
 	var dist = Common.get_dist(position)
 	if dist < BUZZ_SIZE:
 		return true
