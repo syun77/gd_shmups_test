@@ -10,11 +10,11 @@ script = ExtResource("1_dn3c5")
 
 [node name="MainLayer" type="CanvasLayer" parent="."]
 
+[node name="Player" parent="MainLayer" instance=ExtResource("2_gu37x")]
+position = Vector2(484, 255)
+
 [node name="ShotLayer" type="CanvasLayer" parent="."]
 
 [node name="BulletLayer" type="CanvasLayer" parent="."]
 
 [node name="ParticleLayer" type="CanvasLayer" parent="."]
-
-[node name="Player" parent="." instance=ExtResource("2_gu37x")]
-position = Vector2(484, 255)

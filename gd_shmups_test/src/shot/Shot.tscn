@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://kq72c2r5dpn5"]
+[gd_scene load_steps=5 format=3 uid="uid://kq72c2r5dpn5"]
 
 [ext_resource type="Script" path="res://src/shot/Shot.gd" id="1_vyius"]
-[ext_resource type="Texture2D" uid="uid://2lwktrj0uhde" path="res://assets/images/shot3.png" id="2_cxffh"]
-[ext_resource type="Texture2D" uid="uid://b87uvp1ecse2s" path="res://assets/images/shot.png" id="2_x21ss"]
+[ext_resource type="Texture2D" uid="uid://qb00kvly35at" path="res://assets/images/shot3.png" id="2_yrcxy"]
 
 [sub_resource type="CanvasItemMaterial" id="2"]
 blend_mode = 1
@@ -17,39 +16,31 @@ script = ExtResource("1_vyius")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_cxffh")
+texture = ExtResource("2_yrcxy")
 
 [node name="Sprite0" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite1" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite2" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite3" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite4" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite5" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite6" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="Sprite7" type="Sprite2D" parent="."]
 material = SubResource("2")
-texture = ExtResource("2_x21ss")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")

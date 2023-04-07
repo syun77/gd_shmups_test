@@ -3,7 +3,6 @@ extends Area2D
 class_name Shot
 
 @onready var _spr = $Sprite
-@onready var _line = $Line2D
 
 var _velocity = Vector2()
 var _is_accel = false
