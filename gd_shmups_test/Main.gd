@@ -1,11 +1,44 @@
 extends Node2D
+# =======================================
+# メインシーン.
+# =======================================
 
+# ---------------------------------------
+# preloads.
+# ---------------------------------------
 
-# Called when the node enters the scene tree for the first time.
+# ---------------------------------------
+# consts.
+# ---------------------------------------
+
+# ---------------------------------------
+# onready.
+# ---------------------------------------
+# Instances.
+@onready var _player = $MainLayer/Player
+# Layers
+@onready var _bg_layer = $BgLayer
+@onready var _main_layer = $MainLayer
+@onready var _shot_layer = $ShotLayer
+@onready var _bullet_layer = $BulletLayer
+@onready var _particle_layer = $ParticleLayer
+
+# ---------------------------------------
+# vars.
+# ---------------------------------------
+
+# ---------------------------------------
+# private functions.
+# ---------------------------------------
 func _ready() -> void:
-	pass # Replace with function body.
+	var layers = {
+		"bg": _bg_layer,
+		"main": _main_layer,
+		"shot": _shot_layer,
+		"bullet": _bullet_layer,
+		"particle": _particle_layer,
+	}
+	Common.setup(layers, _player)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://co007hj8mry32"]
+
+[ext_resource type="Script" path="res://src/player/Player.gd" id="1_cj14x"]
+[ext_resource type="Texture2D" uid="uid://vww48cvsno2r" path="res://assets/images/fighter_a.png" id="2_y03y7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iph73"]
+radius = 12.0416
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_cj14x")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_y03y7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_iph73")

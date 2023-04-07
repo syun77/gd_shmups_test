@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://jl8feaeqy233"]
+[gd_scene load_steps=3 format=3 uid="uid://jl8feaeqy233"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_dn3c5"]
+[ext_resource type="PackedScene" uid="uid://co007hj8mry32" path="res://src/player/Player.tscn" id="2_gu37x"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_dn3c5")
+
+[node name="BgLayer" type="CanvasLayer" parent="."]
+
+[node name="MainLayer" type="CanvasLayer" parent="."]
+
+[node name="ShotLayer" type="CanvasLayer" parent="."]
+
+[node name="BulletLayer" type="CanvasLayer" parent="."]
+
+[node name="ParticleLayer" type="CanvasLayer" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_gu37x")]
+position = Vector2(484, 255)
